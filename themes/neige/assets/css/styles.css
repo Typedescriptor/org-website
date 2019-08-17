@@ -1,0 +1,6 @@
+@import "node_modules/tailwindcss/base";
+@import "node_modules/tailwindcss/components";
+@import "assets/css/site";
+
+/* Must be last for postcss @apply to work */
+@import "node_modules/tailwindcss/utilities";

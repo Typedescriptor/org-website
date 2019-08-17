@@ -1,0 +1,3 @@
+{{ $summary := .Summary  }}
+{{ $subtitle := index (split $summary "\n") 0 }}
+{{ dict "title" .Title "subtitle" $subtitle "helpLink" .Permalink "level" .Params.rule_type | jsonify }}

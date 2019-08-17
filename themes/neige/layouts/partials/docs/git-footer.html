@@ -1,0 +1,27 @@
+{{ if or .GitInfo .Site.Params.GitEditPath }}
+<div class="{{ if not .GitInfo }}justify-end{{ else }}justify-between{{ end }}">
+  {{ with .GitInfo }}
+  <div>
+    {{ $date := .AuthorDate.Local.Format (default "January 2, 2006" $.Site.Params.DateFormat) }}
+    <a href="{{ $.Site.Params.GitRepoURL }}/commit/{{ .Hash }}"
+       title='Last modified {{ $date }}'
+       target="_blank"
+       rel="noopener">
+      <img src="{{ "svg/calendar.svg" | relURL }}" alt="Changed"> {{ $date }}
+    </a>
+  </div>
+  {{ end }}
+  {{ with .Site.Params.GitEditPath }}
+  <div class="pt-4 pb-16">
+    {{ if $.File }}<a class="text-sm btn btn-blue"
+                      href="{{ $.Site.Params.GitRepoURL }}/{{ . }}/{{ $.File.Path }}"
+                      target="_blank"
+                      rel="noopener">
+      <img class="inline-block align-top"
+           src="{{ "svg/edit.svg" | relURL }}"
+           alt="Edit"> Edit this page
+    </a>{{ end }}
+  </div>
+  {{ end }}
+</div>
+{{ end }}

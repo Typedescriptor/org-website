@@ -1,0 +1,12 @@
+name = "neige"
+license = "MIT"
+licenselink = "https://github.com/Typedescriptor/org-website/blob/master/LICENSE"
+description = ""
+homepage = "https://github.com/Typedescriptor/org-website"
+tags = ["Hugo", "Tailwind Css", "Typedescriptor"]
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Typedescriptor"
+  homepage = "https://github.com/Typedescriptor/"

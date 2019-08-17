@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text:400,400i&display=swap');
+@import url('https://rsms.me/inter/inter.css');
+@import './buttons.css';
+@import './highlight.css';
+@import './content.css';
+
+.dm-serif-display {
+    font-family: 'DM Serif Display', serif;
+}
+
+.dm-serif {
+    font-family: 'DM Serif Text', serif;
+}
+
+.inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.leading-compress {
+    line-height: 0.925;
+}
+
+@supports (font-variation-settings: normal) {
+  .inter {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+#TableOfContents a:hover {
+    @apply underline;
+}
+
+.hanging-1 {
+  text-indent: -1.0rem;
+}
+
+.content-link, .nav-link {
+  position: relative;
+}
+
+.content-link::after,
+.nav-link::after {
+  bottom: 0;
+  content: '';
+  height: 1px;
+  position: absolute;
+  right: 0;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.content-link::after,
+.nav-link:hover::after {
+  @apply bg-gray-900;
+}
+
+.content-link:hover::after,
+.nav-link::after {
+  @apply bg-transparent;
+}
+
+.content-link:hover {
+  @apply text-blue-700;
+}

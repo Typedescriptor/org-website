@@ -1,0 +1,139 @@
+.content {
+  line-height: 1.6;
+
+  > p:first-of-type {
+      @apply dm-serif text-2xl text-gray-700;
+      line-height: 1.4;
+      margin-bottom: 40px;
+      font-weight: regular;
+  }
+
+  p {
+    @apply pb-4;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply mt-4 mb-2 dm-serif;
+  }
+
+  h1 {
+    @apply text-2xl font-semibold;
+  }
+
+  h2 {
+    @apply text-xl font-semibold;
+  }
+
+  h3, h4, h5, h6 {
+    @apply text-base font-semibold;
+  }
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  b, optgroup, strong {
+    @apply font-semibold;
+  }
+
+  /* similar treatment to .nav-link */
+  a {
+    position: relative;
+    white-space: nowrap;
+  }
+
+  a::after {
+    bottom: 0;
+    content: '';
+    height: 1px;
+    position: absolute;
+    right: 0;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+
+  a::after {
+    @apply bg-gray-900;
+  }
+
+  a:hover::after {
+    @apply bg-transparent;
+  }
+
+  a:hover {
+    @apply text-blue-700;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    @apply px-1 py-1 bg-gray-200 text-red-700 rounded text-sm;
+  }
+
+  pre {
+    @apply p-4 rounded my-3;
+    overflow-x: auto;
+
+    code {
+      @apply text-red-100;
+      padding: 0;
+      background: none;
+    }
+  }
+
+  blockquote {
+    @apply border-l-4 border-blue-400 pl-2 mb-8;
+
+    > :last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    > p > strong:first-child {
+      @apply uppercase text-gray-500 mr-6;
+    }
+  }
+
+  table {
+    overflow: auto;
+    display: block;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    tr th, tr td {
+      @apply px-4 py-2 border-gray-500 border;
+      line-height: 1;
+    }
+  }
+
+  hr {
+    height: 1px;
+    border: none;
+    @apply bg-gray-500;
+  }
+
+  ul, ol {
+    @apply pl-8 pt-2;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  dl {
+    @apply pl-4;
+    dt {
+      @apply mt-4 font-semibold;
+    }
+
+    dd {
+      @apply mt-4;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+
+import json
+import glob
+import re
+from os import path
+
+data = {}
+for file in glob.glob('./build/json/**/index.json', recursive=True):
+    with open(file, 'r') as f:
+        name = path.basename(path.dirname(file))
+        name = re.sub('-(.)', lambda l: l[1].upper(), name)
+        name = name[0].upper() + name[1:]
+        data[name] = json.load(f)
+
+print(json.dumps(data))

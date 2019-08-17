@@ -1,0 +1,40 @@
+.chroma {
+  @apply bg-gray-900;
+  color: #AAF;
+
+  .c { /* comment */
+    color: #4A4A4A;
+  }
+  .k, .nt { /* keyword */
+    color: #C792EA;
+  }
+  .s { /* string or char */
+    color: #C3E88D;
+  }
+  .u { /* number */
+    color: #F78C6C;
+  }
+  .n { /* some other name */
+    color: #717CB4;
+  }
+  .m { /* method */
+    color: #89DDFF;
+  }
+  .ns { /* namespace */
+    color: #89DDFF;
+  }
+  .tc { /* class */
+      color: #89DDFF;
+  }
+  .p { /* punctuation */
+    color: #4E5579;
+  }
+  .x { /* text */
+  }
+
+}
+
+.highlight *::selection {
+  background: #AAF;
+  color: white;
+}

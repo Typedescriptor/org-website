@@ -1,0 +1,24 @@
+{
+  "name": "typedescriptor-org-website",
+  "version": "0.5.0",
+  "description": "Website and design for Typedescriptor.org",
+  "repository": "https://github.com/Typedescriptor/org-website",
+  "author": "Typedescriptor",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "autoprefixer": "^9.6.1",
+    "postcss": "^7.0.17",
+    "postcss-cli": "^6.1.3",
+    "postcss-import": "^12.0.1",
+    "tailwindcss": "^1.1.0",
+    "postcss-nested": "^4.1.2"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
+}

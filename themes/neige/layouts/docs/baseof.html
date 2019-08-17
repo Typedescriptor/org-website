@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <main class="inter container p-4 mx-auto sm:flex flex-x">
+
+          <aside class="sm:w-1/4 mr-2 border-r border-gray-200 pb-4 flex-none pr-2">
+            {{ partial "docs/menu" . }}
+          </aside>
+
+          <div>
+            {{ template "toc" . }}
+
+            {{ template "main" . }}
+            {{ partial "docs/git-footer" . }}
+          </div>
+        </main>
+        {{ template "_internal/google_analytics_async.html" . }}
+        {{- partial "footer.html" . -}}
+
+    <script>
+        document.getElementById('nav-open').onclick = function () {
+            document.getElementById("nav-menu").classList.toggle("hidden");
+            document.getElementById("nav-open").classList.toggle("hidden");
+            document.getElementById("nav-close").classList.toggle("hidden");
+        }
+        document.getElementById('nav-close').onclick = function () {
+            document.getElementById("nav-menu").classList.toggle("hidden");
+            document.getElementById("nav-close").classList.toggle("hidden");
+            document.getElementById("nav-open").classList.toggle("hidden");
+        }
+    </script>
+
+    </body>
+</html>

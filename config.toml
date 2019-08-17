@@ -1,0 +1,37 @@
+theme = "neige"
+
+languageCode = "en-us"
+title = "Typedescriptor.org"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[outputFormats]
+  [outputFormats.JSON]
+    isPlainText = true
+    path = "json"
+    mediaType = "application/json"
+    rel = "typedescriptor:data"
+
+[params]
+
+  # (Optional, default docs) Specify section of content to render as menu
+  # You can also set value to '*' to render all sections to menu
+  BookSection = '*'
+
+  DateFormat = 'Jan 2, 2006'
+
+  # Set source repository location.
+  # Used for 'Last Modified' and 'Edit this page' links.
+  GitRepoURL = 'https://github.com/Typedescriptor/org-website'
+
+  # Path to GitHub edit page.  Requires GitRepoURL to also be set
+  GitEditPath = 'blob/master/content'
+
+  # Whether to enable search box  (Not fully implemented)
+  EnableSearch = false
+
+
+[params.RuleTypeColorMap]
+  blocker = "red"
+  warning = "yellow"
+  informational = "blue"
