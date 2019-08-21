@@ -18,7 +18,7 @@ Typedescriptor checks for this to ensure that the package has source code and th
 
 ## How to fix this problem
 
-* **Read about how Typedescriptor [links source to repositories][1] and make any fixes**.   It is possible that the URL Typedescriptor used is incorrect.
+* **Read about how Typedescriptor [links source to repositories][1] and make any fixes**.   It is possible that the URL found in the NuGet package is incorrect.
 
 * Reach out to a moderator to conduct a manual review.  This could take some time.
 

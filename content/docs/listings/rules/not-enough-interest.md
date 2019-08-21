@@ -1,5 +1,5 @@
 ---
-title: "Not Enough Interest"
+title: "Not enough interest"
 rule_type: blocker
 outputs:
 - html
@@ -8,7 +8,7 @@ outputs:
 
 The project doesn't have enough stargazers, watchers, forks, or open active issues.
 
-To list on Typedescriptor, a project has to meet some minimum thresholds in these areas, and they have to continue to be met and grow over time.  These interest metrics curve with the project age.  That is, when a project is relatively new or relatively old, these interest metrics don't have to change as much, which matches the expectation of a typical adoption curve.
+To list on Typedescriptor, a project has to meet some minimum thresholds in the number of stargazers, watchers, forks, and issues, and they have to continue to be met and grow over time.  These interest metrics curve with the project age.  That is, when a project is relatively new or relatively old, these interest metrics don't have to change as much, which matches the expectation of a typical adoption curve.
 
 ## Why Typedescriptor checks for it
 

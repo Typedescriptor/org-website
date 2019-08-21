@@ -1,9 +1,8 @@
-theme = "neige"
-
 languageCode = "en-us"
 title = "Typedescriptor.org"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
+enableGitInfo = true
 
 [outputFormats]
   [outputFormats.JSON]
@@ -18,7 +17,7 @@ pygmentsUseClasses = true
   # You can also set value to '*' to render all sections to menu
   BookSection = '*'
 
-  DateFormat = 'Jan 2, 2006'
+  DateFormat = '1/2/2006'
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.

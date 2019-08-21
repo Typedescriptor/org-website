@@ -1,5 +1,5 @@
 ---
-title: "Code Not Updated Recently"
+title: "Code not updated recently"
 rule_type: blocker
 outputs:
 - html
@@ -12,8 +12,8 @@ Most projects need to have been updated once in the last two years.  If a projec
 
 ## Why Typedescriptor checks for it
 
-A project could be dead if it isn't updated regularly.  Typedescriptor doesn't want to list projects that are dead unless they are particularly vital in the .NET ecosystem or particularly mature.  Projects that aren't receiving code pushes are probably also not being supported or maintained actively.
+A project could be dead if it isn't updated regularly.  Typedescriptor doesn't want to list projects that are dead unless they are particularly vital to the .NET ecosystem or particularly mature.  Projects that aren't receiving code pushes are probably also not being supported or maintained actively.
 
 ## How to fix this problem
 
-A maintainer needs to fix bugs, implement new features, or otherwise update the project, and this will resolve as it should.
+A maintainer needs to fix bugs, implement new features, or otherwise update the project, and this will resolve this problem.  If this can't be done, then engage a moderator.

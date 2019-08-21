@@ -1,13 +1,14 @@
 {{ if or .GitInfo .Site.Params.GitEditPath }}
 <div class="{{ if not .GitInfo }}justify-end{{ else }}justify-between{{ end }}">
   {{ with .GitInfo }}
-  <div>
+  <div class="text-right">
     {{ $date := .AuthorDate.Local.Format (default "January 2, 2006" $.Site.Params.DateFormat) }}
     <a href="{{ $.Site.Params.GitRepoURL }}/commit/{{ .Hash }}"
        title='Last modified {{ $date }}'
        target="_blank"
+       class="nav-link text-sm text-gray-500"
        rel="noopener">
-      <img src="{{ "svg/calendar.svg" | relURL }}" alt="Changed"> {{ $date }}
+        Last updated: {{ $date }}
     </a>
   </div>
   {{ end }}

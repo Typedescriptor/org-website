@@ -1,6 +1,6 @@
 .PHONY: build
 
-BASE_URL="https://typedescriptor.org/"
+BASE_URL="/"
 
 browse:
 	( sleep 3; open http://localhost:1313 )&

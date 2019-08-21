@@ -1,14 +1,14 @@
 {{ define "main" }}
 <div class="container md:p-6 p-4">
   {{ if .Params.rule_type }}
-	{{ $color := index .Site.Params.RuleTypeColorMap .Params.rule_type }}
+    {{ $color := index .Site.Params.RuleTypeColorMap .Params.rule_type }}
   <span class="text-sm uppercase border-{{$color}}-500 text-{{$color}}-500 border-b-4 pt-1 inline-block mb-2"> {{ .Params.rule_type }} </span>
   {{ end }}
   <h1 class="text-2xl dm-serif">{{.Title}}</h1>
 
   <article class="content">
     {{- .Content -}}
-    </article>
+  </article>
 </div>
 
 {{ end }}
