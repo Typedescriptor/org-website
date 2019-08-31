@@ -13,4 +13,4 @@ for file in glob.glob('./build/json/**/index.json', recursive=True):
         name = name[0].upper() + name[1:]
         data[name] = json.load(f)
 
-print(json.dumps(data))
+print(json.dumps(data, sort_keys=True, indent=2))

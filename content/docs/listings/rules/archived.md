@@ -6,13 +6,13 @@ outputs:
 - json
 ---
 
-Project can't be archived.
+Looks like this project is archived.
 
 Normally, owners archive projects when they are no longer interested in maintaining them.
 
 ## Why Typedescriptor checks for it
 
-Typedescriptor doesn't list dead projects unless they are particularly vital to the .NET ecosystem.  Archived projects are a very good sign that the project is dead.
+Typedescriptor doesn't list dead projects unless they are particularly vital to the .NET ecosystem or are the transitive dependencies of other listed projects.  Archived projects are a very good sign that the project is dead.
 
 ## How to fix this problem
 

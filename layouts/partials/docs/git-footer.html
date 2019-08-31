@@ -4,7 +4,6 @@
   <div class="text-right">
     {{ $date := .AuthorDate.Local.Format (default "January 2, 2006" $.Site.Params.DateFormat) }}
     <a href="{{ $.Site.Params.GitRepoURL }}/commit/{{ .Hash }}"
-       title='Last modified {{ $date }}'
        target="_blank"
        class="nav-link text-sm text-gray-500"
        rel="noopener">

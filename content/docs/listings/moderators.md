@@ -10,7 +10,7 @@ In order to assure high quality on Typedescriptor, we have [several rules](../ru
 
 > **Beta Software**  Typedescriptor Listings is in beta.
 
-During the beta period, a limited number of projects will be added to Typedescriptor.
+During the beta period, a limited number of projects will be added to Typedescriptor, and Typedescriptor moderators will probably allow more listings to be unblocked when there are problems.
 
 <a name="suppress-problems"> </a>
 # Moderators can suppress problems
@@ -21,3 +21,4 @@ When problems occur in a listing, a moderator might suppress them in order to un
 * **Feedback from Typedescriptor users**
 * **Dependency management** &nbsp;&nbsp; Some packages are transitive dependencies of other packages.  We generally try to list dependencies
 * [**Sponsorships**](../sponsorships)
+* During the beta, we'll allow moderators to suppress more problems than usual to help grow Typedescriptor's listing base.
