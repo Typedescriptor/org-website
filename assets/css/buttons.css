@@ -7,3 +7,19 @@
 .btn-blue:hover {
   @apply bg-blue-500 border-transparent text-white;
 }
+.btn-brand-hero, .btn-brand-hero-primary {
+  @apply px-4 py-2 mx-2 rounded-sm text-center transition duration-300 ease-in-out;
+}
+
+.btn-brand-hero {
+  @apply border text-brand-orange-300 border-brand-orange-500;
+}
+.btn-brand-hero:hover {
+  @apply text-white bg-brand-orange-300 border-brand-orange-300;
+}
+.btn-brand-hero-primary {
+  @apply text-white bg-brand-orange-500;
+}
+.btn-brand-hero-primary:hover {
+  @apply text-white bg-brand-orange-300;
+}

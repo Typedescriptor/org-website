@@ -1,5 +1,14 @@
 {{ define "main" }}
-  <div class="container home-content mx-auto">
-    {{ .Content }}
-  </div>
+
+<div class="container home-content mx-auto">
+
+    {{ $widget := .Page.Params.widget }}
+    {{ if $widget }}
+        {{ $widget_path := printf "widgets/%s.html" .Page.Params.widget }}
+        {{ partial $widget_path .Page }}
+    {{ else }}
+        {{ .Content }}
+    {{ end }}
+
+</div>
 {{ end }}

@@ -1,0 +1,26 @@
+<section id="hero" class="mt-8 mx-auto flex flex-wrap items-center border border-gray-300">
+    <div class="mx-auto p-8 text-center md:text-left {{ with .Params.hero_media }} md:w-1/2 {{ else }} md:w-3/4 {{ end }}">
+        <div class="dm-serif-display text-gray-600 text-3xl"> 
+            {{ .Content }}
+        </div>
+        <div class="mx-auto mt-8 mb-8 md:mb-0 flex justify-center md:justify-start">
+            {{ range .Params.btn }}
+                {{ $class := "btn-brand-hero" }}
+                {{ if .primary }}
+                    {{ $class = "btn-brand-hero-primary"}}
+                {{ end }}
+
+                <a href="{{ .url | relLangURL }}" class="no-underline whitespace-no-wrap {{ $class }}">
+                    {{ .label }}
+                </a>
+            {{ end }}
+        </div>
+    </div>
+
+    {{ with .Params.hero_media }}
+    <div class="md:w-1/2">
+        <img src="{{ . | relURL}}" alt="hero image">
+    </div>
+    {{ end }}
+
+</section>
