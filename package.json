@@ -21,6 +21,7 @@
     "not dead"
   ],
   "dependencies": {
+    "browserslist": "4.16.6",
     "lodash": "4.17.21"
   }
 }
