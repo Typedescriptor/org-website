@@ -8,7 +8,7 @@ module.exports = {
         require('postcss-nested'),
         require('tailwindcss')(themeDir + 'assets/css/tailwind.config.js'),
         require('autoprefixer')({
-            grid: true
+            grid: false
         }),
         require('postcss-reporter')
     ]
